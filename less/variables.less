@@ -12,3 +12,61 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+@mobile: ~"(max-width: 500px)";
+
+@media @mobile {
+    .container{
+        padding: 20px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header a {
+        display: flex;
+        margin: 0 50px;
+    }
+
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .text-content {
+        width: 100%;
+    }
+
+    .content-pick {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inverse-content {
+        display: flex;
+        flex-direction: column-reverse;
+        border-bottom: 2px dashed @navigation-border;
+        padding-bottom: 30px;
+    }
+
+    .content-destination {
+        padding-bottom: 30px;
+        border-bottom: 2px dashed @navigation-border;
+    }
+
+    .content-pick {
+    width: 75%;
+    margin: 0 auto 30px;
+    padding-top: 30px;
+    }
+
+    .destination .btn {
+        .btn-style(10px, white);
+        margin-bottom: 30px;
+    }
+
+}

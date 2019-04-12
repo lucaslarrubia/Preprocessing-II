@@ -1,1 +1,20 @@
 // Mixins in here
+
+.btn-style(@radius, @color){
+    display: flex;
+    border-radius: @radius;
+    color: @color;
+    background-color: teal;
+    justify-content: center;
+    padding: 10px 5px;
+    width: 80%;
+    font-size: 14px;
+
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.mobile-width() {
+    width: 100%;
+}
