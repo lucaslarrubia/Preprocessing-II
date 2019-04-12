@@ -238,9 +238,8 @@ header nav {
 header nav a {
   text-decoration: none;
   color: black;
-  margin-right: 10px;
+  margin-right: 20px;
   font-size: 14px;
-  display: flex;
 }
 .footer {
   width: 100%;
@@ -308,20 +307,40 @@ header nav a {
   }
 }
 .content-destination {
-  width: 100%;
+  width: 70%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .content-destination {
+    width: 100%;
+  }
 }
 .content-destination img {
   border-radius: 10px;
 }
 .content-pick {
-  padding-top: 5px;
+  padding-top: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  border-top: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .content-pick {
+    border-top: none;
+    padding-top: 5px;
+  }
 }
 .content-pick .destination {
-  width: 80%;
+  width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .content-pick .destination {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 .content-pick .btn {
   display: flex;

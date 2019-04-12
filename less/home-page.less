@@ -77,8 +77,11 @@
 }
 
   .content-destination {
-    width: 100%;
+    width: 70%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -87,13 +90,24 @@
 
 
   .content-pick {
-    padding-top: 5px;
+    padding-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    border-top: 2px dashed @navigation-border;
+    @media @mobile {
+      border-top: none;
+      padding-top: 5px;
+    }
 
     .destination {
-      width: 80%;
+      width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
     }
 
     .btn {
