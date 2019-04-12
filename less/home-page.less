@@ -2,7 +2,7 @@
 
 .top-content {
     border-top: 1px dashed gray;
-}
+  }
 
 .top-content h2 {
     margin-top: 20px;
@@ -30,20 +30,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
    
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        .mobile-width();
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        .mobile-width();
 
       img {
         border-radius: 10px;
+
+    
       }
     }
   }
@@ -52,6 +57,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -86,6 +94,7 @@
 
     .btn {
       .btn-style(8px, white);
+      }
     }
   }
-}// home
+}

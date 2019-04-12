@@ -1,3 +1,60 @@
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header a {
+    display: flex;
+    margin: 0 50px;
+  }
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .text-content {
+    width: 100%;
+  }
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+  }
+  .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    border-bottom: 2px dashed #C0C0C0;
+    padding-bottom: 30px;
+  }
+  .content-destination {
+    padding-bottom: 30px;
+    border-bottom: 2px dashed #C0C0C0;
+  }
+  .content-pick {
+    width: 75%;
+    margin: 0 auto 30px;
+    padding-top: 30px;
+  }
+  .destination .btn {
+    display: flex;
+    border-radius: 10px;
+    color: white;
+    background-color: teal;
+    justify-content: center;
+    padding: 10px 5px;
+    width: 80%;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .destination .btn {
+    width: 100%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -215,43 +272,58 @@ header nav a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
-  border-radius: 10px;
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+  .home .content-section .img-content img {
+    border-radius: 10px;
+  }
 }
-.home .inverse-content {
+.home .content-section .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+@media (max-width: 500px) {
+  .home .content-section .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
+.home .content-section .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.home .content-section .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.home .content-section .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.home .content-section .content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.home .content-section .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.home .content-section .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .btn {
+.home .content-section .content-pick .btn {
   display: flex;
   border-radius: 8px;
   color: white;
@@ -260,4 +332,9 @@ header nav a {
   padding: 10px 5px;
   width: 80%;
   font-size: 14px;
+}
+@media (max-width: 500px) {
+  .home .content-section .content-pick .btn {
+    width: 100%;
+  }
 }
